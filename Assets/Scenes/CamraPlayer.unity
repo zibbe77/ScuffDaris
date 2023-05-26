@@ -317,7 +317,7 @@ MonoBehaviour:
   edgeTolerance: 0.05
   useScreenEdge: 0
   scrollingBool: 0
-  boundsRange: {x: 100, y: 100}
+  boundsRange: {x: 10000, y: 10000}
 --- !u!4 &2076850720
 Transform:
   m_ObjectHideFlags: 0

@@ -49,7 +49,7 @@ public class PlayerMovment : MonoBehaviour
 
     //tracks where the dragging action started
     Vector3 startDrag;
-    [SerializeField] private Vector2 boundsRange = new Vector2(100, 100);
+    [SerializeField] private Vector2 boundsRange = new Vector2(10000, 10000);
     #endregion
 
     //Have all the Generally stuff and uppdates evryting
@@ -297,7 +297,7 @@ public class PlayerMovment : MonoBehaviour
     {
         //Gizmos.color = Color.red;
         //Gizmos.DrawSphere(transform.position, 5f);
-        //Gizmos.DrawWireCube(Vector3.zero, new Vector3(boundsRange.x * 2f, 5f, boundsRange.y * 2f));
+        Gizmos.DrawWireCube(Vector3.zero, new Vector3(boundsRange.x * 2f, 5f, boundsRange.y * 2f));
     }
     #endregion
 }
