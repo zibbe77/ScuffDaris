@@ -17,7 +17,7 @@ public class ObjectKlick : MonoBehaviour
 
     void Update()
     {
-        if (Mouse.current.leftButton.isPressed)
+        if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             RaycastHit hit;
             Ray ray = myCam.ScreenPointToRay(Mouse.current.position.ReadValue());

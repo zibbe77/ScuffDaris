@@ -48,12 +48,16 @@ public class ObjectSelction : MonoBehaviour
 
     public void DragSelect(GameObject objectToAdd)
     {
-
+        if (!objectselceted.Contains(objectToAdd))
+        {
+            objectselceted.Add(objectToAdd);
+            objectToAdd.transform.GetChild(0).gameObject.SetActive(true);
+        }
     }
 
     public void DeselectAll()
     {
-        foreach (var obj in objectselceted)
+        foreach (GameObject obj in objectselceted)
         {
             obj.transform.GetChild(0).gameObject.SetActive(false);
         }
